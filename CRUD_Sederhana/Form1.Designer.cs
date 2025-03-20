@@ -188,6 +188,7 @@
             this.btnUbah.Location = new System.Drawing.Point(569, 146);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(139, 34);
+            this.btnUbah.Click += new System.EventHandler(this.BtnTambah);
             this.btnUbah.TabIndex = 3;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.UseVisualStyleBackColor = true;
