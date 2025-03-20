@@ -113,7 +113,7 @@ namespace CRUD_Sederhana
                     {
                         try
                         {
-                            string.nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
+                            string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
                             conn.Open();
                             string query = "DELETE FROM Mahasiswa WHERE NIM = @NIM";
 
@@ -133,6 +133,10 @@ namespace CRUD_Sederhana
                                     MessageBox.Show("Data tidak ditemukan atau gagal dihapus!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
