@@ -35,7 +35,18 @@ namespace CRUD_Sederhana
             txtNIM.Focus();
         }
 
-        
+        private void LoadData()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa";
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn)
+                }
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
