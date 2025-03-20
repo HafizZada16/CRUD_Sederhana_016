@@ -151,7 +151,8 @@ namespace CRUD_Sederhana
         {
             LoadData();
 
-
+            MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.RowCount}",
+                "Debugging DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information)
         }
 
         private void label1_Click(object sender, EventArgs e)
