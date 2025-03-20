@@ -105,6 +105,19 @@ namespace CRUD_Sederhana
         private void BtnHapus(object sender, EventArgs e)
         {
             if (dgvMahasiswa.SelectedRows.Count > 0)
+            {
+                DialogResult confirm = MessageBox.Show("Yakin ingin menghapus data ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirm == DialogResult.Yes)
+                {
+                    using (SqlConnection conn = new SqlConnection(connectionString))
+                    {
+                        try
+                        {
+
+                        }
+                    }
+                }
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
