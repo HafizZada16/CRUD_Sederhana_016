@@ -171,13 +171,14 @@
             this.btnTambah.TabIndex = 1;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = true;
-            this.btnTambah.Click += new System.EventHandler(this.button1_Click);
+            this.btnTambah.Click += new System.EventHandler(this.BtnTambah);
             // 
             // btnHapus
             // 
             this.btnHapus.Location = new System.Drawing.Point(569, 92);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(139, 35);
+            this.btnHapus.Click += new System.EventHandler(this.BtnHapus);
             this.btnHapus.TabIndex = 2;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
@@ -196,6 +197,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(569, 203);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(139, 35);
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh);
             this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
