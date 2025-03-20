@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace CRUD_Sederhana
 {
-    public partial class Form1 : Form
+    public partial class dgvMahasiswa : Form
     {
         private string connectionString = "Data Source=LAPTOP-ITV1OTU4\\HAFIZ16;" + "Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
-        public Form1()
+        public dgvMahasiswa()
         {
             InitializeComponent();
         }
@@ -56,6 +56,14 @@ namespace CRUD_Sederhana
                 { 
                     MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void BtnTambah(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+
             }
         }
 

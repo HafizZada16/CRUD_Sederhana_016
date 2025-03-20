@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Sederhana
 {
-    partial class Form1
+    partial class dgvMahasiswa
     {
         /// <summary>
         /// Required designer variable.
@@ -36,9 +36,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNIM = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelepon = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnUbah = new System.Windows.Forms.Button();
@@ -141,14 +141,6 @@
             this.txtNama.Size = new System.Drawing.Size(249, 22);
             this.txtNama.TabIndex = 6;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(149, 87);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(249, 22);
-            this.txtEmail.TabIndex = 7;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
-            // 
             // txtTelepon
             // 
             this.txtTelepon.Location = new System.Drawing.Point(149, 129);
@@ -162,6 +154,14 @@
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.Size = new System.Drawing.Size(249, 22);
             this.txtAlamat.TabIndex = 9;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(149, 87);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(249, 22);
+            this.txtEmail.TabIndex = 7;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // btnTambah
             // 
@@ -210,7 +210,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(720, 222);
             this.dataGridView1.TabIndex = 5;
             // 
-            // Form1
+            // dgvMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,7 +221,7 @@
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form1";
+            this.Name = "dgvMahasiswa";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
