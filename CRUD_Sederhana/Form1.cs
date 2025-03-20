@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace CRUD_Sederhana
 {
-    public partial class dgvMahasiswa : Form
+    public partial class Form1 : Form
     {
         private string connectionString = "Data Source=LAPTOP-ITV1OTU4\\HAFIZ16;" + "Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
-        public dgvMahasiswa()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -47,7 +47,7 @@ namespace CRUD_Sederhana
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    dgvMahasiswa.AutoGenerateColums = true;
+                    dgvMahasiswa.AutoGenerateColumns = true;
                     dgvMahasiswa.DataSource = dt;
 
                     ClearForm();
@@ -100,6 +100,11 @@ namespace CRUD_Sederhana
                 }
 
             }
+        }
+
+        private void BtnHapus(object sender, EventArgs e)
+        {
+            if (dgvMahasiswa.SelectedRows.Count > 0)
         }
 
         private void label1_Click(object sender, EventArgs e)

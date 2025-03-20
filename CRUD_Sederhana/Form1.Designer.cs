@@ -1,6 +1,6 @@
 ﻿namespace CRUD_Sederhana
 {
-    partial class dgvMahasiswa
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -43,9 +43,9 @@
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnUbah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMahasiswa = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -200,33 +200,33 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 272);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(720, 222);
-            this.dataGridView1.TabIndex = 5;
-            // 
             // dgvMahasiswa
+            // 
+            this.dgvMahasiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMahasiswa.Location = new System.Drawing.Point(37, 272);
+            this.dgvMahasiswa.Name = "dgvMahasiswa";
+            this.dgvMahasiswa.RowHeadersWidth = 51;
+            this.dgvMahasiswa.RowTemplate.Height = 24;
+            this.dgvMahasiswa.Size = new System.Drawing.Size(720, 222);
+            this.dgvMahasiswa.TabIndex = 5;
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 514);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMahasiswa);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnUbah);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "dgvMahasiswa";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -248,7 +248,7 @@
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMahasiswa;
     }
 }
 

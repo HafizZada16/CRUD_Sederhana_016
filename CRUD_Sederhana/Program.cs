@@ -16,7 +16,7 @@ namespace CRUD_Sederhana
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dgvMahasiswa());
+            Application.Run(new Form1());
         }
     }
 }
