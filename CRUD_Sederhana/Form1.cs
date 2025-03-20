@@ -24,6 +24,17 @@ namespace CRUD_Sederhana
         {
             LoadData();
         }
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNama.Clear();
+            txtEmail.Clear();
+            txtTelepon.Clear();
+            txtAlamat.Clear();
+
+            txtNIM.Focus();
+        }
+
         
 
         private void label1_Click(object sender, EventArgs e)
