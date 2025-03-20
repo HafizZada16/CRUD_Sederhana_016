@@ -13,6 +13,17 @@ namespace CRUD_Sederhana
 {
     public partial class Form1 : Form
     {
+        private string connectionString = "Data Source=LAPTOP-ITV1OTU4\\HAFIZ16;" + "Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
         
 
         private void label1_Click(object sender, EventArgs e)
