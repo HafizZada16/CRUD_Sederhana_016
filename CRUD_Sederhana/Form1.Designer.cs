@@ -203,7 +203,7 @@
             // dgvMahasiswa
             // 
             this.dgvMahasiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMahasiswa.Location = new System.Drawing.Point(37, 272);
+            this.dgvMahasiswa.Location = new System.Drawing.Point(33, 267);
             this.dgvMahasiswa.Name = "dgvMahasiswa";
             this.dgvMahasiswa.RowHeadersWidth = 51;
             this.dgvMahasiswa.RowTemplate.Height = 24;

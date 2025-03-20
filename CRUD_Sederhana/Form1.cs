@@ -141,6 +141,17 @@ namespace CRUD_Sederhana
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Pilih data yang akan dihapus!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void BtnRefresh(object sender, EventArgs e)
+        {
+            LoadData();
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
